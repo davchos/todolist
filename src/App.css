@@ -82,6 +82,9 @@ input[type="checkbox"] {
     justify-content: space-around;
     align-items: center;
   }
+  .container {
+    margin: 50px auto;
+  }
 }
 
 @media (min-width: 767px) {
