@@ -5,7 +5,7 @@ const Task = ({ states, setState }) => {
     event.preventDefault();
     if (states.task !== "") {
       const statesCopy = { ...states };
-      statesCopy.taskList.push({
+      statesCopy.taskList.unshift({
         checkBox: false,
         text: statesCopy.task,
         textStyle: "none",
