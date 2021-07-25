@@ -61,7 +61,7 @@ input[type="checkbox"] {
   margin: 0 10px 0 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main-task {
     margin-top: 25px;
     border-top: black solid 3px;

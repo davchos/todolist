@@ -101,7 +101,14 @@ const DiplayTask = ({ states, setState }) => {
 
                 <button onClick={handleEdit}>edit</button>
 
-                <button onClick={handleSave}>save</button>
+                <button
+                  onClick={handleSave}
+                  style={{
+                    visibility: elem.edit ? "visible" : "hidden",
+                  }}
+                >
+                  save
+                </button>
               </div>
             </div>
           );
