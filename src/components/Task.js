@@ -30,8 +30,8 @@ const Task = ({ states, setState }) => {
       <form onSubmit={handleSubmit}>
         <input
           minLength="1"
-          maxLength="100"
-          size="100"
+          maxLength="50"
+          size="50"
           type="text"
           id="task"
           value={states.task}

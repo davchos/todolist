@@ -18,6 +18,7 @@
 .main-display {
   /* width: 60%; */
   /* margin: 200px auto; */
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,6 +29,7 @@ input[type="text"] {
   border-width: 1px;
   border-radius: 5px;
   /* font-size: 15px; */
+  background: lightgray;
 }
 
 /* form {
@@ -57,4 +59,33 @@ i {
 }
 input[type="checkbox"] {
   margin: 0 10px 0 0;
+}
+
+@media (max-width: 767px) {
+  .main-task {
+    margin-top: 25px;
+    border-top: black solid 3px;
+    padding-top: 10px;
+  }
+  .main-task form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-task form input[type="submit"] {
+    margin: 20px auto auto auto;
+  }
+  .main-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 767px) {
+  .hidden-pc {
+    display: none;
+  }
 }

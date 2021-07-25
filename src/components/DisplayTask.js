@@ -78,28 +78,31 @@ const DiplayTask = ({ states, setState }) => {
             handleUpdateText(event, index);
           };
           return (
-            <div className="main-task" key={index}>
-              <input
-                type="checkbox"
-                checked={elem.checkBox}
-                onChange={handleCheck}
-              />
-              <input
-                minLength="1"
-                maxLength="100"
-                size="100"
-                className={elem.textStyle}
-                type="text"
-                value={elem.text}
-                onChange={handleUpdate}
-                readOnly={!elem.edit}
-              />
+            <div className="main-display" key={index}>
+              <div>
+                <input
+                  type="checkbox"
+                  checked={elem.checkBox}
+                  onChange={handleCheck}
+                />
+                <input
+                  minLength="1"
+                  maxLength="50"
+                  size="50"
+                  className={elem.textStyle}
+                  type="text"
+                  value={elem.text}
+                  onChange={handleUpdate}
+                  readOnly={!elem.edit}
+                />
+              </div>
+              <div>
+                <i className="fas fa-trash-alt" onClick={handleBin}></i>
 
-              <i className="fas fa-trash-alt" onClick={handleBin}></i>
+                <button onClick={handleEdit}>edit</button>
 
-              <button onClick={handleEdit}>edit</button>
-
-              <button onClick={handleSave}>save</button>
+                <button onClick={handleSave}>save</button>
+              </div>
             </div>
           );
         })}
