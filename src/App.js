@@ -15,10 +15,12 @@ const App = () => {
   return (
     <div>
       <Header title="Todo List" />
-      {states.taskList.length > 0 && (
-        <DisplayTask states={states} setState={setState} />
-      )}
-      <Task states={states} setState={setState} />
+      <div className="container">
+        {states.taskList.length > 0 && (
+          <DisplayTask states={states} setState={setState} />
+        )}
+        <Task states={states} setState={setState} />
+      </div>
       <Footer />
     </div>
   );

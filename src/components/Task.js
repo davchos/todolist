@@ -25,19 +25,19 @@ const Task = ({ states, setState }) => {
     setState(stateCopy);
   };
   return (
-    <div className="main">
-      <div className="container">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            id="task"
-            value={states.task}
-            placeholder="Enter your task here"
-            onChange={handTaskChange}
-          />
-          <input type="submit" value="Add Task" />
-        </form>
-      </div>
+    <div className="main-task">
+      {/* <div className="container"> */}
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          id="task"
+          value={states.task}
+          placeholder="Enter your task here"
+          onChange={handTaskChange}
+        />
+        <input type="submit" value="Add Task" />
+      </form>
+      {/* </div> */}
     </div>
   );
 };

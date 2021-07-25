@@ -78,7 +78,7 @@ const DiplayTask = ({ states, setState }) => {
             handleUpdateText(event, index);
           };
           return (
-            <div className="main" key={index}>
+            <div className="main-task" key={index}>
               <input
                 type="checkbox"
                 checked={elem.checkBox}
@@ -91,14 +91,7 @@ const DiplayTask = ({ states, setState }) => {
                 onChange={handleUpdate}
                 readOnly={!elem.edit}
               />
-              {/* <span
-                className={elem.textStyle}
-                contentEditable={elem.edit}
-                onChange={handleUpdate}
-                inputMode="text"
-              >
-                {elem.text}
-              </span> */}
+
               <i className="fas fa-trash-alt" onClick={handleBin}></i>
 
               <button onClick={handleEdit}>edit</button>
