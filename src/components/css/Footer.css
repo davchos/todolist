@@ -1,0 +1,9 @@
+.footer {
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  user-select: none;
+  /* color: blue; */
+
+  margin-top: 50px;
+}

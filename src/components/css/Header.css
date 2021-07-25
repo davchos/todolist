@@ -1,0 +1,17 @@
+.header {
+  border-bottom: black solid 1px;
+}
+.header div {
+  width: 300px;
+  padding-left: 20px;
+  height: 50px;
+  /* border-bottom: black solid 1px; */
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  color: blue;
+  font-size: 30px;
+}
+.header span {
+  margin-right: 20px;
+}
