@@ -29,6 +29,9 @@ const Task = ({ states, setState }) => {
       {/* <div className="container"> */}
       <form onSubmit={handleSubmit}>
         <input
+          minLength="1"
+          maxLength="100"
+          size="100"
           type="text"
           id="task"
           value={states.task}
