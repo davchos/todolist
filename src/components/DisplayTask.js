@@ -85,6 +85,7 @@ const DiplayTask = ({ states, setState }) => {
                 onChange={handleCheck}
               />
               <input
+                className={elem.textStyle}
                 type="text"
                 value={elem.text}
                 onChange={handleUpdate}
